@@ -16,40 +16,40 @@ void print_note(int note) {
 
 	switch (note) {
 		case C:
-			printf("C");
+			printf("C ");
 			break;
 		case Db:
 			printf("Db");
 			break;
 		case D:
-			printf("D");
+			printf("D ");
 			break;
 		case Eb:
 			printf("Eb");
 			break;
 		case E:
-			printf("E");
+			printf("E ");
 			break;
 		case F:
-			printf("F");
+			printf("F ");
 			break;
 		case Gb:
 			printf("Gb");
 			break;
 		case G:
-			printf("G");
+			printf("G ");
 			break;
 		case Ab:
 			printf("Ab");
 			break;
 		case A:
-			printf("A");
+			printf("A ");
 			break;
 		case Bb:
 			printf("Bb");
 			break;
 		case B:
-			printf("B");
+			printf("B ");
 			break;
 		default:
 			/* todo: throw exception */

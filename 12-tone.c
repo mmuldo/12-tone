@@ -11,13 +11,18 @@
  * and retrogrades.
  * tr[] must have size of 12.
  */
-void print_table(int tr[]) {
-	int i;
-	for (int j=12; j>0; j--) {
-		i = j % 12;
+void print_matrix(int tr[]) {
+	int interval;
+	int tmp_tr[12];
+	for (int i=0; i<12; i++) {
+		interval = (tr[i] < tr[0]) ? tr[i] - tr[0] : tr[i] - tr[0] - 12;
 
-		print_mline(&tr[i], 12-i);
-		print_mline(tr, i);
+		for (int j=0; j<12; j++) {
+			tmp_tr[j] = (tr[j] - interval) % 12;
+		}
+
+		printf("P%2d: ", -interval%12);
+		print_mline(tmp_tr, 12);
 
 		printf("\n");
 	}

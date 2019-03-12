@@ -5,7 +5,7 @@
 int main(void) {
 	int line[12] = {A, C, E, Ab, B, Eb, D, Db, F, G, Gb, Bb};
 
-	print_table(line);
+	print_matrix(line);
 
 	printf("\n");
 	return 0;

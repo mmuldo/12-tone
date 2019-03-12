@@ -9,4 +9,4 @@
 #include <assert.h>
 #include "chrom-scale.h"
 
-void print_table(int tr[]);
+void print_matrix(int tr[]);
