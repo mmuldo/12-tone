@@ -23,6 +23,7 @@ void print_matrix(int tr[]) {
 
 		printf("P%2d: ", -interval%12);
 		print_mline(tmp_tr, 12);
+		printf(":R%2d", -interval%12);
 
 		printf("\n");
 	}
