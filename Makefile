@@ -1,6 +1,3 @@
-# COMP 211, Spring 2019, Wesleyan University
-#
-
 # Required flags for compilation.
 CFLAGS+=-std=c99 -fdiagnostics-color=auto -Wall
 
