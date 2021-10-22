@@ -5,56 +5,18 @@
  * Chromatic scale module.
  */
 
+#include <string.h>
 #include "chrom-scale.h"
 
+note scale[] = {"C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"};
+
 /* Prints a note from the chromatic scale.
- * If no parameter is passed, prints a 'rest' (space).
  * 0 <= note <= 11
  */
 void print_note(int note) {
 	assert(note >= 0 && note <= 11);
-
-	switch (note) {
-		case C:
-			printf("C ");
-			break;
-		case Db:
-			printf("Db");
-			break;
-		case D:
-			printf("D ");
-			break;
-		case Eb:
-			printf("Eb");
-			break;
-		case E:
-			printf("E ");
-			break;
-		case F:
-			printf("F ");
-			break;
-		case Gb:
-			printf("Gb");
-			break;
-		case G:
-			printf("G ");
-			break;
-		case Ab:
-			printf("Ab");
-			break;
-		case A:
-			printf("A ");
-			break;
-		case Bb:
-			printf("Bb");
-			break;
-		case B:
-			printf("B ");
-			break;
-		default:
-			/* todo: throw exception */
-			printf(" ");
-	}
+	char* pitch = scale[note];
+	printf(strlen(pitch) > 1 ? "%s" : "%s ", pitch);
 }
 
 /* Prints a line of music.
